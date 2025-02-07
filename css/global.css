@@ -9,16 +9,18 @@
   --color-gray-300: #c4c4c4;
 
   --color-blue-100: #e3eaef;
-  --color-blue-500: #2d4872;
-  --color-blue-700: #234875;
+  --color-blue-500: #234875;
+  --color-blue-700: #2d4872;
   --color-blue-900: #171616;
 
+  --color-white: #fdfdfd;
   --color-black: #171616;
 
-  --color-bg: #fdfdfd;
+  --color-bg: var(--color-white);
   --color-bg-secondary: var(--color-gray-100);
 
-  --color-main-text: var(--color-black);
+  --color-text-main: var(--color-black);
+  --color-text-hover: var(--color-blue-500);
   --color-text-active: var(--color-blue-700);
 
   --color-secondary: var(--color-green-400);
@@ -49,7 +51,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: var(--color-black);
+  color: var(--color-text-main);
 }
 
 img {
@@ -82,6 +84,7 @@ h3 {
 .link {
   text-decoration: none;
   color: var(--color-black);
+  transition: 0.3s;
 }
 
 .link--dropdown {
@@ -91,7 +94,7 @@ h3 {
 
 .link--dropdown::after {
   position: absolute;
-  top: 18px;
+  top: -3px;
   content: "";
   background-image: url("/img/down-arrow.svg");
   height: 24px;
@@ -115,6 +118,11 @@ h3 {
   padding: 0;
   bottom: 0;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn--mobile {
+  display: none;
 }
 
 .btn--outline {
@@ -122,4 +130,13 @@ h3 {
   background-color: transparent;
   border: 1px solid var(--color-secondary);
   padding: 13px 23px;
+}
+
+.btn--outline:hover {
+  color: var(--color-white);
+  background-color: var(--color-secondary-hover);
+}
+.btn--outline:active {
+  color: var(--color-white);
+  background-color: var(--color-secondary-active);
 }
