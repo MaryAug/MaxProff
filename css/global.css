@@ -52,6 +52,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: var(--color-text-main);
+  scrollbar-gutter: stable;
 }
 
 img {
@@ -60,25 +61,49 @@ img {
   display: block;
 }
 
-h1 {
+.title {
   font-size: 60px;
   font-style: 700;
 }
 
-h2 {
+.section {
+}
+
+.section__title {
   font-size: 42px;
   font-style: 700;
 }
 
-h3 {
+.section__descr {
+  font-weight: 300;
   font-size: 18px;
-  font-style: 700;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: calc(var(--container-width) + (var(--container-offset) * 2));
+}
+
+.text {
+}
+
+.text--light {
+  font-weight: 300;
+}
+
+.text--bold {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text--line-through {
+  text-decoration: line-through;
+}
+
+.text--headline {
+  color: var(--color-secondary);
+  font-size: 18px;
 }
 
 .link {
@@ -105,6 +130,11 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.img {
+  max-width: 100%;
+  display: block;
 }
 
 .phone {
@@ -136,6 +166,7 @@ h3 {
   color: var(--color-white);
   background-color: var(--color-secondary-hover);
 }
+
 .btn--outline:active {
   color: var(--color-white);
   background-color: var(--color-secondary-active);
