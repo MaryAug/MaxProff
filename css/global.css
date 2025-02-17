@@ -15,7 +15,7 @@
   --color-blue-800: #2e3648;
   --color-blue-900: #171616;
 
-  --color-white: #fdfdfd;
+  --color-white: #fffefe;
   --color-black: #171616;
 
   --color-bg: var(--color-white);
@@ -65,25 +65,31 @@ img {
 }
 
 .logo__img {
-  width: 126px;
+  max-width: 126px;
 }
 
 .title {
   font-size: 60px;
-  font-style: 700;
+  font-weight: 700;
 }
 
 .section {
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 .section__title {
   font-size: 42px;
-  font-style: 700;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 45px;
 }
 
 .section__descr {
   font-weight: 300;
   font-size: 18px;
+  text-align: center;
 }
 
 .container {
@@ -93,6 +99,7 @@ img {
 }
 
 .text {
+  margin: 0;
 }
 
 .text--light {
@@ -112,6 +119,8 @@ img {
   color: var(--color-secondary);
   text-transform: uppercase;
   font-size: 18px;
+  font-weight: 700;
+  padding-right: 5px;
 }
 
 .link {
@@ -134,14 +143,24 @@ img {
   width: 24px;
 }
 
+.link-mobile--dropdown {
+  position: relative;
+}
+
+.link-mobile--dropdown::after {
+  position: absolute;
+  top: -3px;
+  left: -30px;
+  content: "";
+  background-image: url("/img/left-arrow.svg");
+  height: 24px;
+  width: 24px;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.phone {
-  white-space: nowrap;
 }
 
 .btn {
@@ -151,7 +170,17 @@ img {
   padding: 0;
   bottom: 0;
   cursor: pointer;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: 1px solid transparent;
   transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary-hover);
+}
+.btn:active {
+  background-color: var(--color-secondary-active);
 }
 
 .btn--mobile {
@@ -161,8 +190,7 @@ img {
 .btn--outline {
   color: var(--color-secondary);
   background-color: transparent;
-  border: 1px solid var(--color-secondary);
-  padding: 13px 23px;
+  border-color: var(--color-secondary);
 }
 
 .btn--outline:hover {
@@ -173,4 +201,8 @@ img {
 .btn--outline:active {
   color: var(--color-white);
   background-color: var(--color-secondary-active);
+}
+
+.locked {
+  overflow: hidden;
 }

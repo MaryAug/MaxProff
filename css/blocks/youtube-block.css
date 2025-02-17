@@ -1,0 +1,13 @@
+.youtube-block {
+}
+.youtube-block__wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.youtube-block__video {
+  box-shadow: 0 0 10px 0 rgba(171, 171, 171, 0.25);
+  aspect-ratio: 16 / 9;
+  flex-grow: 1;
+}

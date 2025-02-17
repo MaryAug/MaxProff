@@ -1,0 +1,41 @@
+.fotogallery {
+  background-color: var(--color-gray-100);
+}
+
+.fotogallery__slider {
+}
+
+.slider {
+}
+
+.fotogallery__img {
+}
+.fotogallery__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 55px;
+}
+
+.fotogallery__video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.fotogallery__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 55px;
+  margin: 0;
+  background-color: var(--color-white);
+}
+
+.fotogallery__item {
+  max-width: 300px;
+}
+
+.fotogallery__text {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.3;
+}
