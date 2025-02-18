@@ -1,12 +1,10 @@
 .reviews {
   background-color: var(--color-gray-100);
 }
-.reviews__wrapper {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  align-items: center;
+
+.reviews__slider {
 }
+
 .reviews__item {
   box-shadow: 0 0 10px 0 rgba(171, 171, 171, 0.25);
   flex-grow: 1;
@@ -20,13 +18,13 @@
   flex-direction: column;
   gap: 5px;
   background-color: var(--color-white);
-  padding-left: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 5px 15px 25px;
 }
+
 .reviews__text {
   margin: 0;
 }
+
 .reviews__address {
   position: relative;
   margin: 0;

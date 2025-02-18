@@ -11,7 +11,7 @@
   font-display: swap;
   src: url("../fonts/Roboto-Regular.ttf") format("ttf");
   font-weight: 400;
-  font-style: regular;
+  font-style: normal;
 }
 
 @font-face {

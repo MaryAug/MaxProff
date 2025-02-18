@@ -107,7 +107,6 @@ img {
 }
 
 .text--bold {
-  font-size: 18px;
   font-weight: 700;
 }
 
@@ -164,15 +163,15 @@ img {
 }
 
 .btn {
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 0;
   bottom: 0;
-  cursor: pointer;
-  background-color: var(--color-secondary);
-  color: var(--color-white);
+  padding: 13px 30px;
   border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -188,9 +187,11 @@ img {
 }
 
 .btn--outline {
+  font-size: 16px;
+  font-weight: 500;
+  border-color: var(--color-secondary);
   color: var(--color-secondary);
   background-color: transparent;
-  border-color: var(--color-secondary);
 }
 
 .btn--outline:hover {
@@ -205,4 +206,22 @@ img {
 
 .locked {
   overflow: hidden;
+}
+
+.slider-pagination {
+  bottom: -40px;
+  gap: 10px;
+}
+
+.slider-page {
+  background-color: transparent;
+  outline: 2px solid var(--color-blue-700);
+  width: 14px;
+  height: 14px;
+}
+
+.slider-page.is-active {
+  border: 2px solid var(--color-gray-100);
+  background-color: var(--color-blue-700);
+  transform: none;
 }

@@ -164,6 +164,10 @@
 }
 
 @media (max-width: 479px) {
+  .text--headline {
+    font-size: 16px;
+  }
+
   .header__top {
     flex-wrap: nowrap;
   }
@@ -327,6 +331,10 @@
 
   .menu-mobile__link {
     font-size: 16px;
+  }
+
+  .reviews__info {
+    padding-left: 15px;
   }
 
   .consultation__block {

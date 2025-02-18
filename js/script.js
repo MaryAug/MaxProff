@@ -64,6 +64,36 @@ dropdownBtnMob.addEventListener("click", () => {
 //   });
 // });
 
+// Слайдер отзывов
+document.addEventListener("DOMContentLoaded", function () {
+  const reviewsSlider = new Splide(".reviews__slider", {
+    type: "slide",
+    arrows: false,
+    pagination: true,
+    perPage: 1,
+    gap: "20px",
+    grid: {
+      rows: 2,
+      cols: 2,
+      gap: {
+        row: "25px",
+        col: "25px",
+      },
+    },
+    classes: {
+      pagination: "splide__pagination slider-pagination",
+      page: "splide__pagination__page slider-page",
+    },
+    breakpoints: {
+      768: {
+        grid: false,
+      },
+    },
+  });
+
+  reviewsSlider.mount(window.splide.Extensions);
+});
+
 // Аккордеон
 function accordion() {
   const items = document.querySelectorAll(".accordion__item-trigger");
