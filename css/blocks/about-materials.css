@@ -1,0 +1,43 @@
+.about-materials {
+  background-color: var(--color-gray-100);
+}
+
+.about-materials__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 50px 20px 25px;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px 0 rgba(171, 171, 171, 0.25);
+}
+
+.about-materials__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 220px;
+  align-items: start;
+  gap: 5px;
+}
+
+.about-materials__icon {
+  height: 46px;
+}
+
+.about-materials__text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about-materials__images {
+  display: flex;
+  gap: 15px;
+}
+
+.about-materials__img {
+  overflow: auto;
+}

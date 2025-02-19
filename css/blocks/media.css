@@ -12,6 +12,10 @@
 }
 
 @media (max-width: 999px) {
+  .title {
+    font-size: 52px;
+  }
+
   .link--dropdown {
     padding-right: 0;
   }
@@ -61,6 +65,10 @@
     padding: 5px;
   }
 
+  .background-green {
+    font-size: 52px;
+  }
+
   .consultation__block {
     padding: 12px 0;
     gap: 30px;
@@ -75,6 +83,15 @@
 }
 
 @media (max-width: 767px) {
+  .section {
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
+
+  .section__title {
+    font-size: 36px;
+  }
+
   .btn {
     font-size: 15px;
   }
@@ -99,6 +116,32 @@
   ul.menu-services__list li:hover > ul.submenu {
     top: 50px;
     gap: 10px;
+  }
+
+  .banner__wrapper {
+    padding-bottom: 190px;
+  }
+
+  .banner__tagline {
+    font-size: 30px;
+  }
+
+  .about-materials__list {
+    padding: 30px 35px 35px;
+    justify-content: start;
+  }
+
+  .about-materials__item {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .about-materials__text {
+    font-size: 16px;
+  }
+
+  .about-materials__icon {
+    height: 30px;
   }
 
   .consultation__headline {
@@ -164,6 +207,10 @@
 }
 
 @media (max-width: 479px) {
+  .title {
+    font-size: 34px;
+  }
+
   .text--headline {
     font-size: 16px;
   }

@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 0;
+  padding: 20px 0 35px;
 }
 
 .header__top {
@@ -62,7 +62,6 @@
 .header__bottom {
   border-top: 1px solid var(--color-secondary);
   border-bottom: 1px solid var(--color-secondary);
-  margin-bottom: 35px;
 }
 
 .menu__list {
@@ -92,6 +91,7 @@
   padding: 20px 35px;
   transition: 0.3s;
   cursor: pointer;
+  z-index: 10;
 }
 
 .menu-services__item:hover {

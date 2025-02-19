@@ -4,7 +4,9 @@
 @import url("blocks/header.css");
 @import url("blocks/footer.css");
 
+@import url("blocks/banner.css");
 @import url("blocks/price.css");
+@import url("blocks/about-materials.css");
 @import url("blocks/reviews.css");
 @import url("blocks/fotogallery.css");
 @import url("blocks/youtube-block.css");

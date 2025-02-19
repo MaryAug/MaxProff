@@ -64,6 +64,33 @@ dropdownBtnMob.addEventListener("click", () => {
 //   });
 // });
 
+// Слайдер цен
+document.addEventListener("DOMContentLoaded", function () {
+  const priceSlider = new Splide(".price__slider", {
+    type: "slide",
+    arrows: false,
+    pagination: true,
+    perPage: 4,
+    gap: "20px",
+    classes: {
+      pagination: "splide__pagination slider-pagination",
+      page: "splide__pagination__page slider-page",
+    },
+    breakpoints: {
+      1260: {
+        perPage: 3,
+      },
+      999: {
+        perPage: 2,
+      },
+      654: {
+        perPage: 1,
+      },
+    },
+  });
+  priceSlider.mount();
+});
+
 // Слайдер отзывов
 document.addEventListener("DOMContentLoaded", function () {
   const reviewsSlider = new Splide(".reviews__slider", {
@@ -90,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-
   reviewsSlider.mount(window.splide.Extensions);
 });
 

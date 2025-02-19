@@ -1,6 +1,6 @@
-.price {
-}
 .price__wrapper {
+  margin: 14px 0 !important;
+  padding: 0 5px !important;
 }
 
 .price__card {
@@ -25,18 +25,6 @@
   padding-bottom: 30px;
 }
 
-.price__img {
-}
-
-.price__top-info {
-}
-
-.price__title {
-}
-
-.price__text {
-}
-
 .price__desc {
   min-height: 145px;
   padding-top: 25px;
@@ -51,8 +39,8 @@
   position: absolute;
   content: "";
   top: -2px;
-  left: -25px;
-  width: 285px;
+  left: -26px;
+  width: 283px;
   border: 2px solid var(--color-blue-700);
 }
 

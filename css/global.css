@@ -30,7 +30,7 @@
   --color-secondary-active: var(--color-green-600);
 
   --container-width: 1200px;
-  --container-offset: 30px;
+  --container-offset: 20px;
 
   --gap: 20px;
 }
@@ -71,11 +71,12 @@ img {
 .title {
   font-size: 60px;
   font-weight: 700;
+  margin: 0;
 }
 
 .section {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .section__title {
