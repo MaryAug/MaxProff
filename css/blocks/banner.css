@@ -20,10 +20,12 @@
   position: relative;
   z-index: 1;
 }
+
 .banner__info {
   padding-top: 30px;
   max-width: 565px;
 }
+
 .banner__title {
   text-transform: uppercase;
   padding-bottom: 30px;
@@ -43,14 +45,14 @@
   border-radius: 10px;
   background-color: var(--color-secondary-hover);
 }
-.banner__advantages {
-}
+
 .advantages {
   display: flex;
   column-gap: 45px;
   row-gap: 25px;
   flex-wrap: wrap;
 }
+
 .advantages__inner {
   flex: 1 1 211px;
   display: flex;
@@ -59,14 +61,11 @@
   gap: 15px;
   max-width: 185px;
 }
+
 .advantages__img {
   width: 60px;
   height: 60px;
 }
-.advantages__text {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-}
+
 .calculator {
 }

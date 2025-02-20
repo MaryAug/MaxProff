@@ -55,8 +55,11 @@
 }
 
 .price__service {
+  font-size: 14px;
+  font-weight: 700;
   padding-top: 15px;
   padding-bottom: 10px;
+  margin: 0;
 }
 
 .price__service-name {
@@ -101,6 +104,10 @@
 
 .price__value {
   padding-bottom: 20px;
+}
+
+.price__discount {
+  font-weight: 700;
 }
 
 .price__special {
