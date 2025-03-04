@@ -39,8 +39,8 @@
   position: absolute;
   content: "";
   top: -2px;
-  left: -26px;
-  width: 283px;
+  left: -25px;
+  width: 282px;
   border: 2px solid var(--color-blue-700);
 }
 

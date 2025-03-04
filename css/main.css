@@ -6,9 +6,11 @@
 
 @import url("blocks/banner.css");
 @import url("blocks/price.css");
+@import url("blocks/promo.css");
+@import url("blocks/work-steps.css");
 @import url("blocks/about-materials.css");
-@import url("blocks/reviews.css");
 @import url("blocks/benefits.css");
+@import url("blocks/reviews.css");
 @import url("blocks/fotogallery.css");
 @import url("blocks/youtube-block.css");
 @import url("blocks/consultation.css");

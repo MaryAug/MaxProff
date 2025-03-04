@@ -1,0 +1,64 @@
+.promo {
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__inner {
+}
+
+.promo__card {
+  position: relative;
+  max-width: 384px;
+}
+
+.promo__card::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 39px;
+  top: 0;
+  background: linear-gradient(to top, var(--color-white) 9%, transparent 50%);
+}
+
+.promo__img {
+  position: relative;
+}
+
+.promo__content {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 272px;
+  z-index: 1;
+}
+
+.promo__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.promo__text {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.promo__btn {
+  margin: auto;
+  margin-top: 25px;
+  border-width: 2px;
+  text-decoration: none;
+  padding: 13px 60px;
+  box-shadow: 0 4px 4px 0 rgba(148, 148, 148, 0.25);
+}

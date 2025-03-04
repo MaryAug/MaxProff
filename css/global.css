@@ -91,6 +91,9 @@ img {
   font-weight: 300;
   font-size: 18px;
   text-align: center;
+  margin: auto;
+  margin-bottom: 65px;
+  max-width: 775px;
 }
 
 .container {

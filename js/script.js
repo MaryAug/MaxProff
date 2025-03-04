@@ -91,6 +91,30 @@ document.addEventListener("DOMContentLoaded", function () {
   priceSlider.mount();
 });
 
+// Слайдер акций
+document.addEventListener("DOMContentLoaded", function () {
+  const promoSlider = new Splide(".promo__slider", {
+    type: "slide",
+    arrows: false,
+    pagination: true,
+    perPage: 3,
+    gap: "20px",
+    classes: {
+      pagination: "splide__pagination slider-pagination",
+      page: "splide__pagination__page slider-page",
+    },
+    breakpoints: {
+      999: {
+        perPage: 2,
+      },
+      654: {
+        perPage: 1,
+      },
+    },
+  });
+  promoSlider.mount();
+});
+
 // Слайдер отзывов
 document.addEventListener("DOMContentLoaded", function () {
   const reviewsSlider = new Splide(".reviews__slider", {

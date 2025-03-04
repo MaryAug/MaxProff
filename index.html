@@ -778,38 +778,78 @@
     </section>
     <section class="promo section">
       <div class="container">
-        <h2 class="section__title">Акции</h2>
         <div class="promo__wrapper">
-          <div class="promo__card">
-            <img src="/img/family-moving.jpg" alt="" class="promo__img" />
-            <div class="promo__content">
-              <h3 class="promo__title">Новоселам</h3>
-              <p class="promo__text">
-                Специальная скидка для тех кто переехал не более года назад
-              </p>
-              <button class="btn open-modal">Получить скидку</button>
+          <h2 class="section__title">Акции</h2>
+          <ul
+            class="splide__pagination slider-pagination splide__pagination--ltr"
+            role="tablist"
+            aria-label="Select a slide to show"
+          >
+            <li role="presentation">
+              <button
+                class="splide__pagination__page slider-page is-active"
+                type="button"
+                role="tab"
+                aria-controls="splide01-slide01"
+                aria-label="Go to slide 1"
+                aria-selected="true"
+              ></button>
+            </li>
+            <li role="presentation">
+              <button
+                class="splide__pagination__page slider-page"
+                type="button"
+                role="tab"
+                aria-controls="splide01-slide02"
+                aria-label="Go to slide 2"
+                tabindex="-1"
+              ></button>
+            </li>
+          </ul>
+          <div class="splide promo__slider">
+            <div class="splide__track">
+              <ul class="splide__list promo__inner">
+                <li class="splide__slide promo__card">
+                  <img src="/img/family-moving.jpg" alt="" class="promo__img" />
+                  <div class="promo__content">
+                    <h3 class="promo__title">Новоселам</h3>
+                    <p class="promo__text">
+                      Специальная скидка для тех кто переехал не более года
+                      назад
+                    </p>
+                    <button class="btn open-modal">Получить скидку</button>
+                  </div>
+                </li>
+                <li class="splide__slide promo__card">
+                  <img src="/img/newlyweds.jpg" alt="" class="promo__img" />
+                  <div class="promo__content">
+                    <h3 class="promo__title">Молодоженам</h3>
+                    <p class="promo__text">
+                      Спец.скидка если с момента регистрации прошло не более
+                      года
+                    </p>
+                    <button class="btn open-modal">Получить скидку</button>
+                  </div>
+                </li>
+                <li class="splide__slide promo__card">
+                  <img
+                    src="/img/medium-shot-couple.jpg"
+                    alt=""
+                    class="promo__img"
+                  />
+                  <div class="promo__content">
+                    <h3 class="promo__title">Пенсионерам</h3>
+                    <p class="promo__text">
+                      Специальная скидка для наших дорогих
+                    </p>
+                    <button class="btn open-modal">Получить скидку</button>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="promo__card">
-            <img src="/img/newlyweds.jpg" alt="" class="promo__img" />
-            <div class="promo__content">
-              <h3 class="promo__title">Молодоженам</h3>
-              <p class="promo__text">
-                Спец.скидка если с момента регистрации прошло не более года
-              </p>
-              <button class="btn open-modal">Получить скидку</button>
-            </div>
-          </div>
-          <div class="promo__card">
-            <img src="/img/medium-shot-couple.jpg" alt="" class="promo__img" />
-            <div class="promo__content">
-              <h3 class="promo__title">Пенсионерам</h3>
-              <p class="promo__text">Специальная скидка для наших дорогих</p>
-              <button class="btn open-modal">Получить скидку</button>
-            </div>
-          </div>
+          <a href="/" class="promo__btn btn btn--outline">Все акции</a>
         </div>
-        <a href="/" class="promo__btn btn">Все акции</a>
       </div>
     </section>
     <section class="work-steps section">
@@ -819,50 +859,50 @@
           Вам понятен каждый этап: фиксированные сроки и цены, предоставляем все
           документы: накладные, гарантии, акты. Вы будете уверены в результате.
         </p>
-        <ul class="work-steps__list">
+        <ul class="work-steps__list list-reset">
           <div class="work-steps__tablet-column">
             <li class="work-steps__item">
-              <img src="img/adv-builder.png" alt="" class="work-steps__img" />
+              <img src="img/adv-builder.svg" alt="" class="work-steps__img" />
               <p class="work-steps__text">Бесплатный выезд замерщика</p>
             </li>
             <li class="work-steps__item">
-              <img src="img/adv-consent.png" alt="" class="work-steps__img" />
+              <img src="img/adv-consent.svg" alt="" class="work-steps__img" />
               <p class="work-steps__text">Смета в день обращения</p>
             </li>
             <li class="work-steps__item">
               <img
-                src="img/official-document.png"
+                src="img/official-document.svg"
                 alt=""
                 class="work-steps__img"
               />
               <p class="work-steps__text">Договор</p>
             </li>
             <li class="work-steps__item">
-              <img src="img/gdpr.png" alt="" class="work-steps__img" />
+              <img src="img/gdpr.svg" alt="" class="work-steps__img" />
               <p class="work-steps__text">Накладные материалы</p>
             </li>
           </div>
           <div class="work-steps__tablet-column">
             <li class="work-steps__item">
-              <img src="img/cctv.png" alt="" class="work-steps__img" />
+              <img src="img/cctv.svg" alt="" class="work-steps__img" />
               <p class="work-steps__text">
                 Контроль: фотоотчёт или видеонаблюдение
               </p>
             </li>
             <li class="work-steps__item">
-              <img src="img/contract.png" alt="" class="work-steps__img" />
+              <img src="img/contract.svg" alt="" class="work-steps__img" />
               <p class="work-steps__text">Акт выполненных работ</p>
             </li>
             <li class="work-steps__item">
               <img
-                src="img/adv-cooperation.png"
+                src="img/adv-cooperation.svg"
                 alt=""
                 class="work-steps__img"
               />
               <p class="work-steps__text">Акт приемки работ по договору</p>
             </li>
             <li class="work-steps__item">
-              <img src="img/adv-guarantee.png" alt="" class="work-steps__img" />
+              <img src="img/adv-guarantee.svg" alt="" class="work-steps__img" />
               <p class="work-steps__text">Гарантия на выполненные работы</p>
             </li>
           </div>
