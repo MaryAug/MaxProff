@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: row;
   gap: var(--gap);
-  justify-content: space-around;
 }
 
 .work-steps__tablet-column::after {
@@ -31,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  max-width: 115px;
+  flex: 1 1 115px;
 }
 
 .work-steps__item::after {

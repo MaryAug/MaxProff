@@ -3,10 +3,11 @@
 }
 
 .reviews__slider {
+  padding-top: 20px;
 }
 
 .reviews__item {
-  box-shadow: 0 0 10px 0 rgba(171, 171, 171, 0.25);
+  box-shadow: var(--shadow);
   flex-grow: 1;
 }
 .reviews__video {

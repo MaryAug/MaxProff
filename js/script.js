@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 4,
     gap: "20px",
     classes: {
-      pagination: "splide__pagination slider-pagination",
-      page: "splide__pagination__page slider-page",
+      pagination: "splide__pagination slider__pagination",
+      page: "splide__pagination__page slider__page",
     },
     breakpoints: {
       1260: {
@@ -100,8 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 3,
     gap: "20px",
     classes: {
-      pagination: "splide__pagination slider-pagination",
-      page: "splide__pagination__page slider-page",
+      pagination: "splide__pagination slider__pagination",
+      page: "splide__pagination__page slider__page",
     },
     breakpoints: {
       999: {
@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
     classes: {
-      pagination: "splide__pagination slider-pagination",
-      page: "splide__pagination__page slider-page",
+      pagination: "splide__pagination slider__pagination",
+      page: "splide__pagination__page slider__page",
     },
     breakpoints: {
       768: {
@@ -144,24 +144,60 @@ document.addEventListener("DOMContentLoaded", function () {
   reviewsSlider.mount(window.splide.Extensions);
 });
 
+// Слайдер фотогалереи
+document.addEventListener("DOMContentLoaded", function () {
+  const fotogallerySlider = new Splide(".fotogallery__slider", {
+    type: "loop",
+    arrows: true,
+    pagination: true,
+    perPage: 3,
+    perMove: 1,
+    focus: "center",
+    gap: "10px",
+    classes: {
+      pagination: "splide__pagination slider__pagination",
+      page: "splide__pagination__page slider__page",
+      arrows: "splide__arrows slider__arrows",
+      arrow: "splide__arrow slider__arrow",
+      prev: "splide__arrow--prev slider__arrow--prev",
+      next: "splide__arrow--next slider__arrow--next",
+    },
+  });
+  fotogallerySlider.mount();
+});
+
 // Аккордеон
 function accordion() {
-  const items = document.querySelectorAll(".accordion__item-trigger");
-  items.forEach((item) => {
-    item.addEventListener("click", () => {
-      const parent = item.parentNode;
-      if (parent.classList.contains("accordion__item--active")) {
-        parent.classList.remove("accordion__item--active");
+  const items = document.querySelectorAll(".accordion__item");
+  for (const item of items) {
+    const trigger = item.querySelector(".accordion__trigger");
+    const content = item.querySelector(".accordion__content");
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (item.classList.contains("accordion__item--active")) {
+        item.classList.remove("accordion__item--active");
+        trigger.ariaExpanded = false;
+        content.style.maxHeight = 0;
       } else {
-        document
-          .querySelectorAll(".accordion__item")
-          .forEach((child) =>
-            child.classList.remove("accordion__item--active")
-          );
-        parent.classList.add("accordion__item--active");
+        for (const item of items) {
+          item.classList.remove("accordion__item--active");
+          item.querySelector(".accordion__trigger").ariaExpanded = false;
+          item.querySelector(".accordion__content").style.maxHeight = 0;
+        }
+        item.classList.add("accordion__item--active");
+        content.style.maxHeight = content.scrollHeight + "px";
+        if (
+          item.parentNode.parentNode.classList.contains("accordion__content")
+        ) {
+          item.parentNode.parentNode.style.maxHeight =
+            item.parentNode.parentNode.scrollHeight +
+            content.scrollHeight +
+            "px";
+        }
+        trigger.ariaExpanded = true;
       }
     });
-  });
+  }
 }
 
 accordion();

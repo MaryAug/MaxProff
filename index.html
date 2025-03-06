@@ -399,6 +399,7 @@
         </div>
       </div>
     </header>
+
     <section class="banner">
       <div class="container">
         <div class="banner__wrapper">
@@ -457,32 +458,6 @@
     <section class="price section">
       <div class="container">
         <h2 class="section__title">Цены на ремонт</h2>
-        <ul
-          class="splide__pagination slider-pagination splide__pagination--ltr"
-          role="tablist"
-          aria-label="Select a slide to show"
-        >
-          <li role="presentation">
-            <button
-              class="splide__pagination__page slider-page is-active"
-              type="button"
-              role="tab"
-              aria-controls="splide01-slide01"
-              aria-label="Go to slide 1"
-              aria-selected="true"
-            ></button>
-          </li>
-          <li role="presentation">
-            <button
-              class="splide__pagination__page slider-page"
-              type="button"
-              role="tab"
-              aria-controls="splide01-slide02"
-              aria-label="Go to slide 2"
-              tabindex="-1"
-            ></button>
-          </li>
-        </ul>
         <div class="splide price__slider">
           <div class="splide__track">
             <ul class="splide__list price__wrapper">
@@ -780,32 +755,6 @@
       <div class="container">
         <div class="promo__wrapper">
           <h2 class="section__title">Акции</h2>
-          <ul
-            class="splide__pagination slider-pagination splide__pagination--ltr"
-            role="tablist"
-            aria-label="Select a slide to show"
-          >
-            <li role="presentation">
-              <button
-                class="splide__pagination__page slider-page is-active"
-                type="button"
-                role="tab"
-                aria-controls="splide01-slide01"
-                aria-label="Go to slide 1"
-                aria-selected="true"
-              ></button>
-            </li>
-            <li role="presentation">
-              <button
-                class="splide__pagination__page slider-page"
-                type="button"
-                role="tab"
-                aria-controls="splide01-slide02"
-                aria-label="Go to slide 2"
-                tabindex="-1"
-              ></button>
-            </li>
-          </ul>
           <div class="splide promo__slider">
             <div class="splide__track">
               <ul class="splide__list promo__inner">
@@ -965,60 +914,62 @@
     <section class="quality-control section">
       <div class="container">
         <h2 class="section__title">Многоуровневый контроль качества</h2>
-        <p class="section__descr"></p>
-        <div class="quality-control__wrapper">
-          <img
-            src="img/industrial-service.jpg"
-            alt=""
-            class="quality-control__img"
-          />
-          <div class="quality-control__inner">
-            <div class="quality-control__item">
-              <p class="quality-control__headline text text--bold-subhead">
-                Главный инженер
-              </p>
-              <p class="quality-control__text">
-                Наблюдает за работой в режиме реального времени. Проверяет
-                поставщиков материалов и оборудования
-              </p>
-            </div>
-            <div class="quality-control__item">
-              <p class="quality-control__headline text text--bold-subhead">
-                Отдел технического конроля
-              </p>
-              <p class="quality-control__text">
-                Проверяет качество работ на всех объектах-решает спорные
-                ситуации
-              </p>
-            </div>
-            <div class="quality-control__item">
-              <p class="quality-control__headline text text--bold-subhead">
-                Видео и фото контроль
-              </p>
-              <p class="quality-control__text">
-                Онлайн-контроль хода ремонта 24/7
-              </p>
-            </div>
-            <div class="quality-control__item">
-              <p class="quality-control__headline text text--bold-subhead">
-                Начальник участка
-              </p>
-              <p class="quality-control__text">
-                Оценивает соответствие процесса ремонта условиям договора по
-                срокам и стоимости.
-              </p>
-            </div>
-            <div class="quality-control__item">
-              <p class="quality-control__headline text text--bold-subhead">
-                Прораб
-              </p>
-              <p class="quality-control__text">
-                Приезжает на объект 4-5 раз в неделю, контролирует работу
-                мастеров. Проверяет каждый этап по 120 пунктам соответсвия.
-              </p>
-            </div>
-          </div>
-        </div>
+        <p class="section__descr">
+          Ремонтируем квартиры без дефектов благодаря многоуровневому контролю
+          качества:
+        </p>
+      </div>
+      <div class="quality-control__wrapper">
+        <img
+          src="img/industrial-service.jpg"
+          alt=""
+          class="quality-control__img"
+        />
+        <ol class="quality-control__inner list-reset">
+          <li class="quality-control__item">
+            <p class="quality-control__headline text text--bold-subhead">
+              Главный инженер
+            </p>
+            <p class="quality-control__text">
+              Наблюдает за работой в режиме реального времени. Проверяет
+              поставщиков материалов и оборудования
+            </p>
+          </li>
+          <li class="quality-control__item">
+            <p class="quality-control__headline text text--bold-subhead">
+              Отдел технического конроля
+            </p>
+            <p class="quality-control__text">
+              Проверяет качество работ на всех объектах-решает спорные ситуации
+            </p>
+          </li>
+          <li class="quality-control__item">
+            <p class="quality-control__headline text text--bold-subhead">
+              Видео и фото контроль
+            </p>
+            <p class="quality-control__text">
+              Онлайн-контроль хода ремонта 24/7
+            </p>
+          </li>
+          <li class="quality-control__item">
+            <p class="quality-control__headline text text--bold-subhead">
+              Начальник участка
+            </p>
+            <p class="quality-control__text">
+              Оценивает соответствие процесса ремонта условиям договора по
+              срокам и стоимости.
+            </p>
+          </li>
+          <li class="quality-control__item">
+            <p class="quality-control__headline text text--bold-subhead">
+              Прораб
+            </p>
+            <p class="quality-control__text">
+              Приезжает на объект 4-5 раз в неделю, контролирует работу
+              мастеров. Проверяет каждый этап по 120 пунктам соответсвия.
+            </p>
+          </li>
+        </ol>
       </div>
     </section>
     <section class="benefits section">
@@ -1026,7 +977,7 @@
         <h2 class="section__title">Наши преимущества</h2>
         <div class="benefits__wrapper">
           <div class="benefits__item">
-            <img src="img/contract.png" alt="" class="benefits__img" />
+            <img src="img/contract.svg" alt="" class="benefits__img" />
             <p class="benefits__headline text text--bold-subhead">
               Работа без предоплаты
             </p>
@@ -1046,7 +997,7 @@
             </p>
           </div>
           <div class="benefits__item">
-            <img src="img/adv-builder.png" alt="" class="benefits__img" />
+            <img src="img/adv-builder.svg" alt="" class="benefits__img" />
             <p class="benefits__headline text text--bold-subhead">
               Мастера-славяне с опытом от 5 лет
             </p>
@@ -1056,7 +1007,7 @@
             </p>
           </div>
           <div class="benefits__item">
-            <img src="img/adv-guarantee.png" alt="" class="benefits__img" />
+            <img src="img/adv-guarantee.svg" alt="" class="benefits__img" />
             <p class="benefits__headline text text--bold-subhead">
               За нами не переделывают
             </p>
@@ -1072,14 +1023,14 @@
       <div class="container">
         <h2 class="section__title">Отзывы</h2>
         <div class="splide reviews__slider">
-          <ul
-            class="splide__pagination slider-pagination splide__pagination--ltr"
+          <!-- <ul
+            class="splide__pagination slider__pagination splide__pagination--ltr"
             role="tablist"
             aria-label="Select a slide to show"
           >
             <li role="presentation">
               <button
-                class="splide__pagination__page slider-page is-active"
+                class="splide__pagination__page slider__page is-active"
                 type="button"
                 role="tab"
                 aria-controls="splide01-slide01"
@@ -1089,7 +1040,7 @@
             </li>
             <li role="presentation">
               <button
-                class="splide__pagination__page slider-page"
+                class="splide__pagination__page slider__page"
                 type="button"
                 role="tab"
                 aria-controls="splide01-slide02"
@@ -1097,7 +1048,7 @@
                 tabindex="-1"
               ></button>
             </li>
-          </ul>
+          </ul> -->
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide reviews__item">
@@ -1252,18 +1203,25 @@
             <button
               class="splide__arrow splide__arrow--prev slider__arrow slider__arrow--prev"
             >
-              <img src="@img/icon-prev.png" class="slider__arrow-img" alt="" />
+              <img src="/img/arrow-prev.svg" class="slider__arrow-img" alt="" />
             </button>
             <button
               class="splide__arrow splide__arrow--next slider__arrow slider__arrow--next"
             >
-              <img src="@img/icon-next.png" class="slider__arrow-img" alt="" />
+              <img src="/img/arrow-next.svg" class="slider__arrow-img" alt="" />
             </button>
           </div>
+          <ul class="splide__pagination slider__pagination"></ul>
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="" alt="" class="fotogallery__img" />
+              <li class="splide__slide slider__slide">
+                <img src="/img/master-1.jpg" alt="" class="fotogallery__img" />
+              </li>
+              <li class="splide__slide slider__slide">
+                <img src="/img/master-2.jpg" alt="" class="fotogallery__img" />
+              </li>
+              <li class="splide__slide slider__slide">
+                <img src="/img/master-3.jpg" alt="" class="fotogallery__img" />
               </li>
             </ul>
           </div>
@@ -1382,39 +1340,44 @@
         </div>
       </div>
     </section>
-    <section class="suppliers section">
+    <section class="suppliers">
       <div class="container">
-        <h2 class="section__title suppliers__title">
-          Только лучшие поставщики
-        </h2>
-        <p class="section__descr suppliers__descr">
-          В нашей работе мы используем самые качественные и проверенные годами
-          материалы
-        </p>
-        <div class="suppliers__content">
-          <div class="suppliers__info">
-            <div class="suppliers__text">
-              <p>
-                Получите бесплатный сертификат на чистовые материалы номиналом:
-              </p>
-              <p><span class="background-blue">30 000</span> руб.</p>
+        <div class="suppliers__wrapper">
+          <h2 class="section__title suppliers__title">
+            Только лучшие поставщики
+          </h2>
+          <p class="section__descr suppliers__descr">
+            В нашей работе мы используем самые качественные и проверенные годами
+            материалы
+          </p>
+          <div class="suppliers__content">
+            <div class="suppliers__info">
+              <div class="suppliers__text-block">
+                <p class="suppliers__text">
+                  Получите бесплатный сертификат на чистовые материалы
+                  номиналом:
+                </p>
+                <p class="suppliers__text">
+                  <span class="background-blue">30&nbsp;000</span>&nbsp;руб.
+                </p>
+              </div>
+              <button class="btn open-modal">Оставить заявку</button>
             </div>
-            <button class="btn open-modal">Оставить заявку</button>
-          </div>
-          <div class="suppliers__brands">
-            <img src="img/knauf.png" alt="" class="suppliers__img" /><img
-              src="/img/rehau.png"
-              alt=""
-              class="suppliers__img"
-            /><img src="img/roca.png" alt="" class="suppliers__img" /><img
-              src="img/rasch.png"
-              alt=""
-              class="suppliers__img"
-            /><img src="img/grohe.png" alt="" class="suppliers__img" /><img
-              src="img/cersanit.png"
-              alt=""
-              class="suppliers__img"
-            />
+            <div class="suppliers__brands">
+              <img src="img/knauf.png" alt="" class="suppliers__img" /><img
+                src="/img/rehau.png"
+                alt=""
+                class="suppliers__img"
+              /><img src="img/roca.png" alt="" class="suppliers__img" /><img
+                src="img/rasch.png"
+                alt=""
+                class="suppliers__img"
+              /><img src="img/grohe.png" alt="" class="suppliers__img" /><img
+                src="img/cersanit.png"
+                alt=""
+                class="suppliers__img"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -1423,16 +1386,15 @@
       <div class="container">
         <h2 class="section__title">Вопросы и ответы</h2>
         <p class="section__descr">Знаем, о чем вы думаете прямо сейчас</p>
-        <div class="accordion">
+        <div class="faq__accordion accordion">
           <div class="accordion__item">
             <div class="accordion__trigger">
-              <div class="accordion__trigger-num">01</div>
-              <div class="accordion__trigger-text">
-                Сколько лет работает компания?
-              </div>
               <div class="accordion__trigger-img">
                 <span class="line1"></span>
                 <span class="line2"></span>
+              </div>
+              <div class="accordion__trigger-text">
+                Сколько лет работает компания?
               </div>
             </div>
             <div class="accordion__content">
@@ -1445,13 +1407,12 @@
 
           <div class="accordion__item">
             <div class="accordion__trigger">
-              <div class="accordion__trigger-num">02</div>
-              <div class="accordion__trigger-text">
-                Сколько человек работает в “МаксПрофф”?
-              </div>
               <div class="accordion__trigger-img">
                 <span class="line1"></span>
                 <span class="line2"></span>
+              </div>
+              <div class="accordion__trigger-text">
+                Сколько человек работает в “МаксПрофф”?
               </div>
             </div>
             <div class="accordion__content">
@@ -1464,13 +1425,12 @@
 
           <div class="accordion__item">
             <div class="accordion__trigger">
-              <div class="accordion__trigger-num">03</div>
-              <div class="accordion__trigger-text">
-                Можно ли приехать к вам, что бы познакомиться?
-              </div>
               <div class="accordion__trigger-img">
                 <span class="line1"></span>
                 <span class="line2"></span>
+              </div>
+              <div class="accordion__trigger-text">
+                Можно ли приехать к вам, что бы познакомиться?
               </div>
             </div>
             <div class="accordion__content">

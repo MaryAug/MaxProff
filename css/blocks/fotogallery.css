@@ -3,17 +3,18 @@
 }
 
 .fotogallery__slider {
-}
-
-.slider {
+  padding-top: 20px;
 }
 
 .fotogallery__img {
+  border-radius: 8px;
 }
+
 .fotogallery__info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 55px;
+  padding-top: 155px;
 }
 
 .fotogallery__video {
@@ -28,6 +29,7 @@
   padding-left: 55px;
   margin: 0;
   background-color: var(--color-white);
+  box-shadow: var(--shadow-light);
 }
 
 .fotogallery__item {

@@ -1,12 +1,12 @@
 .price__wrapper {
-  margin: 14px 0 !important;
+  margin: 49px 0 14px !important;
   padding: 0 5px !important;
 }
 
 .price__card {
   max-width: 285px;
   border-radius: 16px;
-  box-shadow: 0 0 10px 0 rgba(171, 171, 171, 0.25);
+  box-shadow: var(--shadow);
 }
 
 .price__top {

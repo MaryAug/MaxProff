@@ -12,7 +12,7 @@
   margin-bottom: 35px;
   border-radius: 6px;
   background-color: var(--color-white);
-  box-shadow: 0 0 10px 0 rgba(171, 171, 171, 0.25);
+  box-shadow: var(--shadow);
 }
 
 .about-materials__item {
