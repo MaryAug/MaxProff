@@ -6,6 +6,10 @@
 .accordion__item {
 }
 
+.accordion__item:last-child {
+  margin-bottom: 30px;
+}
+
 .accordion__item--active {
   background-color: var(--color-gray-200);
   box-shadow: var(--shadow-light);

@@ -399,7 +399,6 @@
         </div>
       </div>
     </header>
-
     <section class="banner">
       <div class="container">
         <div class="banner__wrapper">
@@ -639,116 +638,166 @@
     <section class="portfolio section">
       <div class="container">
         <h2 class="section__title">Примеры наших работ</h2>
-        <div class="splide portfolio__slider slider">
-          <div class="splide__arrows slider__arrows">
-            <button
-              class="splide__arrow splide__arrow--prev slider__arrow slider__arrow--prev"
+        <div class="portfolio__wrapper">
+          <div class="portfolio__card">
+            <div
+              id="thumbnail-carousel"
+              class="splide portfolio__mini-slider slider"
+              aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
             >
-              <img src="@img/icon-prev.png" class="slider__arrow-img" alt="" />
-            </button>
-            <button
-              class="splide__arrow splide__arrow--next slider__arrow slider__arrow--next"
-            >
-              <img src="@img/icon-next.png" class="slider__arrow-img" alt="" />
-            </button>
-          </div>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="portfolio__card">
-                  <div class="portfolio__sidebar"></div>
-                  <div class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img" />
-                    <div class="portfolio__content">
-                      <div class="portfolio__info">
-                        <img
-                          src="/img/dollar-sign.svg"
-                          alt="Доллар"
-                          class="portfolio__icon"
-                        />
-                        <p class="portfolio__text">Сумма:</p>
-                        <p class="portfolio__text text text--bold-subhead">
-                          272 250 руб.
-                        </p>
-                      </div>
-                      <div class="portfolio__info">
-                        <img
-                          src="/img/grid.svg"
-                          alt="Грид"
-                          class="portfolio__icon"
-                        />
-                        <p class="portfolio__text">Площадь</p>
-                        <p class="portfolio__text text text--bold-subhead">
-                          43 м2
-                        </p>
-                      </div>
-                      <div class="portfolio__info">
-                        <img
-                          src="/img/calendar.svg"
-                          alt="Календарь"
-                          class="portfolio__icon"
-                        />
-                        <p class="portfolio__text">Срок:</p>
-                        <p class="portfolio__text text text--bold-subhead">
-                          90 дней
-                        </p>
-                      </div>
-                      <div class="portfolio__info">
-                        <img
-                          src="/img/home.svg"
-                          alt="Домик"
-                          class="portfolio__icon"
-                        />
-                        <p class="portfolio__text">Комнат:</p>
-                        <p class="portfolio__text text text--bold-subhead">3</p>
-                      </div>
-                      <div class="portfolio__info">
-                        <img
-                          src="/img/map-pin.svg"
-                          alt="Метка на карте"
-                          class="portfolio__icon"
-                        />
-                        <p class="portfolio__text">Адрес:</p>
-                        <p class="portfolio__text text text--bold-subhead">
-                          Кулика 18
-                        </p>
-                      </div>
-                      <div class="portfolio__info portfolio__info--services">
-                        <img
-                          src="/img/file-text.svg"
-                          alt="Файл"
-                          class="portfolio__icon"
-                        />
-                        <p class="portfolio__text">Перечень работ:</p>
-                      </div>
-                      <ul class="portfolio__services">
-                        <li class="portfolio__service">
-                          Штукатурка стен по маякам
-                        </li>
-                        <li class="portfolio__service">
-                          Грунтовка стен и потолка
-                        </li>
-                        <li class="portfolio__service">
-                          Монтаж натяжных потолков
-                        </li>
-                        <li class="portfolio__service">
-                          Шпатлёвка стен под обои
-                        </li>
-                        <li class="portfolio__service">Окраска стен</li>
-                        <li class="portfolio__service">Укладка плитки в с/у</li>
-                        <li class="portfolio__service">Прокладка электрики</li>
-                        <li class="portfolio__service">
-                          Установка плинтусов и откосов
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+              <div class="splide__track splide__track--ttb">
+                <ul class="splide__list">
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/banner-image.png"
+                      alt=""
+                      class="portfolio__mini-img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/master-1.jpg"
+                      alt=""
+                      class="portfolio__mini-img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/master-2.jpg"
+                      alt=""
+                      class="portfolio__mini-img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/banner-image.png"
+                      alt=""
+                      class="portfolio__mini-img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/banner-image.png"
+                      alt=""
+                      class="portfolio__mini-img"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="main-carousel" class="splide portfolio__slider slider">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/banner-image.png"
+                      alt=""
+                      class="portfolio__img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/master-1.jpg"
+                      alt=""
+                      class="portfolio__img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/master-2.jpg"
+                      alt=""
+                      class="portfolio__img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/banner-image.png"
+                      alt=""
+                      class="portfolio__img"
+                    />
+                  </li>
+                  <li class="splide__slide portfolio__slide">
+                    <img
+                      src="/img/banner-image.png"
+                      alt=""
+                      class="portfolio__img"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio__sidebar">
+              <div class="portfolio__content">
+                <div class="portfolio__info">
+                  <img
+                    src="/img/dollar-sign.svg"
+                    alt="Доллар"
+                    class="portfolio__icon"
+                  />
+                  <p class="portfolio__text">Сумма:</p>
+                  <p class="portfolio__text text text--bold-subhead">
+                    272 250 руб.
+                  </p>
                 </div>
-              </li>
-            </ul>
+                <div class="portfolio__info">
+                  <img src="/img/grid.svg" alt="Грид" class="portfolio__icon" />
+                  <p class="portfolio__text">Площадь</p>
+                  <p class="portfolio__text text text--bold-subhead">43 м2</p>
+                </div>
+                <div class="portfolio__info">
+                  <img
+                    src="/img/calendar.svg"
+                    alt="Календарь"
+                    class="portfolio__icon"
+                  />
+                  <p class="portfolio__text">Срок:</p>
+                  <p class="portfolio__text text text--bold-subhead">90 дней</p>
+                </div>
+                <div class="portfolio__info">
+                  <img
+                    src="/img/home.svg"
+                    alt="Домик"
+                    class="portfolio__icon"
+                  />
+                  <p class="portfolio__text">Комнат:</p>
+                  <p class="portfolio__text text text--bold-subhead">3</p>
+                </div>
+                <div class="portfolio__info">
+                  <img
+                    src="/img/map-pin.svg"
+                    alt="Метка на карте"
+                    class="portfolio__icon"
+                  />
+                  <p class="portfolio__text">Адрес:</p>
+                  <p class="portfolio__text text text--bold-subhead">
+                    Кулика 18
+                  </p>
+                </div>
+                <div class="portfolio__info portfolio__info--services">
+                  <img
+                    src="/img/file-text.svg"
+                    alt="Файл"
+                    class="portfolio__icon"
+                  />
+                  <p class="portfolio__text">Перечень работ:</p>
+                </div>
+                <ul class="portfolio__services">
+                  <li class="portfolio__service">Штукатурка стен по маякам</li>
+                  <li class="portfolio__service">Грунтовка стен и потолка</li>
+                  <li class="portfolio__service">Монтаж натяжных потолков</li>
+                  <li class="portfolio__service">Шпатлёвка стен под обои</li>
+                  <li class="portfolio__service">Окраска стен</li>
+                  <li class="portfolio__service">Укладка плитки в с/у</li>
+                  <li class="portfolio__service">Прокладка электрики</li>
+                  <li class="portfolio__service">
+                    Установка плинтусов и откосов
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <button class="portfolio__btn btn open-modal">Оставить заявку</button>
         </div>
-        <button class="btn open-modal">Оставить заявку</button>
       </div>
     </section>
     <section class="promo section">
@@ -937,7 +986,7 @@
           </li>
           <li class="quality-control__item">
             <p class="quality-control__headline text text--bold-subhead">
-              Отдел технического конроля
+              Отдел технического контроля
             </p>
             <p class="quality-control__text">
               Проверяет качество работ на всех объектах-решает спорные ситуации
@@ -1147,24 +1196,62 @@
     <section class="team section">
       <div class="container">
         <h2 class="section__title">Наша команда</h2>
+        <ul class="team__members list-reset">
+          <li class="team__member text text--bold-subhead">Маляр-штукатур</li>
+          <li class="team__member text text--bold-subhead">Прораб</li>
+          <li class="team__member text text--bold-subhead">Сантехник</li>
+          <li class="team__member text text--bold-subhead">Плиточник</li>
+          <li class="team__member text text--bold-subhead">Укладчик полов</li>
+          <li class="team__member text text--bold-subhead">Монтаж окон</li>
+          <li class="team__member text text--bold-subhead">Монтаж потолка</li>
+          <li class="team__member text text--bold-subhead">Сварщик</li>
+        </ul>
         <div class="splide team__slider slider">
           <div class="splide__arrows slider__arrows">
             <button
               class="splide__arrow splide__arrow--prev slider__arrow slider__arrow--prev"
             >
-              <img src="@img/icon-prev.png" class="slider__arrow-img" alt="" />
+              <img src="/img/arrow-prev.svg" class="slider__arrow-img" alt="" />
             </button>
             <button
               class="splide__arrow splide__arrow--next slider__arrow slider__arrow--next"
             >
-              <img src="@img/icon-next.png" class="slider__arrow-img" alt="" />
+              <img src="/img/arrow-next.svg" class="slider__arrow-img" alt="" />
             </button>
           </div>
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
                 <div class="team__card">
-                  <img src="" alt="" class="team__img" />
+                  <img src="/img/team-img.png" alt="" class="team__img" />
+                  <div class="team__content">
+                    <p class="team__headline text text--headline">
+                      Имя фамилия
+                    </p>
+                    <p class="team__text text text--bold-subhead">
+                      Маляр-штукатур выравнивает и подготавливает
+                    </p>
+                    <p class="team__text">
+                      Благодаря Имя наша команда выполняет полный спектр по
+                    </p>
+                    <ul class="team__services">
+                      <li class="team__service">Штукатурка стен по маякам</li>
+                      <li class="team__service">Грунтовка стен и потолка</li>
+                      <li class="team__service">Монтаж натяжных потолков</li>
+                      <li class="team__service">Шпатлёвка стен под обои</li>
+                      <li class="team__service">Окраска стен</li>
+                      <li class="team__service">Укладка плитки в с/у</li>
+                      <li class="team__service">Прокладка электрики</li>
+                      <li class="team__service">
+                        Установка плинтусов и откосов
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="team__card">
+                  <img src="/img/team-img.png" alt="" class="team__img" />
                   <div class="team__content">
                     <p class="team__headline text text--headline">
                       Имя фамилия
@@ -1219,6 +1306,9 @@
               </li>
               <li class="splide__slide slider__slide">
                 <img src="/img/master-2.jpg" alt="" class="fotogallery__img" />
+              </li>
+              <li class="splide__slide slider__slide">
+                <img src="/img/master-3.jpg" alt="" class="fotogallery__img" />
               </li>
               <li class="splide__slide slider__slide">
                 <img src="/img/master-3.jpg" alt="" class="fotogallery__img" />

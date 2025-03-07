@@ -116,6 +116,28 @@
     text-align: left;
   }
 
+  .team__members {
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .team__member::before {
+    bottom: -30px;
+  }
+
+  .team__member::after {
+    bottom: -20px;
+    width: 125%;
+  }
+
+  .team__member:not(:first-child):not(:last-child)::after {
+    left: -10%;
+  }
+
+  .team__card {
+    gap: var(--gap);
+  }
+
   .suppliers__info {
     padding-left: 30px;
     padding-right: 30px;
@@ -150,6 +172,10 @@
 
   .section__title {
     font-size: 36px;
+  }
+
+  .section__descr {
+    margin-bottom: 40px;
   }
 
   .text--bold-subhead {
@@ -300,6 +326,18 @@
   .work-steps__img {
     width: 46px;
     height: 46px;
+  }
+
+  .team__card {
+    flex-direction: column;
+  }
+
+  .team__img {
+    width: 100%;
+  }
+
+  .team__content {
+    padding: 0 10%;
   }
 
   .suppliers__info,
@@ -534,6 +572,20 @@
 
   .reviews__info {
     padding-left: 15px;
+  }
+
+  .team__members {
+    justify-content: initial;
+    row-gap: 0;
+  }
+
+  .team__member {
+    padding-top: 20px;
+  }
+
+  .team__member::after,
+  .team__member::before {
+    display: none;
   }
 
   .consultation__block {

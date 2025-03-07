@@ -91,6 +91,36 @@ document.addEventListener("DOMContentLoaded", function () {
   priceSlider.mount();
 });
 
+// Слайдер портфолио
+document.addEventListener("DOMContentLoaded", function () {
+  const portfolioMainSlider = new Splide("#main-carousel", {
+    type: "fade",
+    rewind: true,
+    pagination: false,
+    arrows: false,
+  });
+
+  const portfolioThumbnailSlider = new Splide("#thumbnail-carousel", {
+    fixedWidth: 87,
+    height: 65,
+    gap: 10,
+    rewind: true,
+    arrows: false,
+    pagination: false,
+    isNavigation: true,
+    breakpoints: {
+      600: {
+        fixedWidth: 60,
+        fixedHeight: 44,
+      },
+    },
+  });
+
+  portfolioMainSlider.sync(portfolioThumbnailSlider);
+  portfolioMainSlider.mount();
+  portfolioThumbnailSlider.mount();
+});
+
 // Слайдер акций
 document.addEventListener("DOMContentLoaded", function () {
   const promoSlider = new Splide(".promo__slider", {
@@ -142,6 +172,26 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   reviewsSlider.mount(window.splide.Extensions);
+});
+
+// Слайдер команды
+document.addEventListener("DOMContentLoaded", function () {
+  const teamSlider = new Splide(".team__slider", {
+    type: "slide",
+    arrows: true,
+    pagination: true,
+    perPage: 1,
+    gap: "20px",
+    classes: {
+      pagination: "splide__pagination slider__pagination",
+      page: "splide__pagination__page slider__page",
+      arrows: "splide__arrows slider__arrows",
+      arrow: "splide__arrow slider__arrow",
+      prev: "splide__arrow--prev slider__arrow--prev",
+      next: "splide__arrow--next slider__arrow--next",
+    },
+  });
+  teamSlider.mount();
 });
 
 // Слайдер фотогалереи

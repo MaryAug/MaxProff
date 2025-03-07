@@ -1,0 +1,90 @@
+.team {
+}
+.team__members {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-bottom: 75px;
+}
+
+.team__member {
+  position: relative;
+  padding-top: 30px;
+  white-space: nowrap;
+}
+
+.team__member::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 3px solid var(--color-white);
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  bottom: -45px;
+  left: 33%;
+  z-index: 1;
+}
+
+.team__member::after {
+  position: absolute;
+  content: "";
+  bottom: -35px;
+  width: 180%;
+  height: 6px;
+  background-color: var(--color-gray-200);
+  border-radius: 3px;
+}
+
+.team__member:not(:first-child):not(:last-child)::after {
+  left: -40%;
+}
+
+.team__member:first-child::after,
+.team__member:last-child::after {
+  width: 120%;
+}
+
+.team__member:first-child::after {
+  left: 0;
+}
+.team__member:last-child::after {
+  right: 0;
+}
+
+.team__slider {
+  margin-bottom: 90px;
+}
+
+.team__card {
+  display: flex;
+  gap: 75px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__img {
+  width: 40%;
+  max-height: 380px;
+  object-fit: contain;
+}
+
+.team__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.team__text {
+  margin: 0;
+}
+
+.team__services {
+  list-style-type: disc;
+}
+
+.team__service {
+  line-height: 1.4;
+}

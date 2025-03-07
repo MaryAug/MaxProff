@@ -4,7 +4,7 @@
 }
 
 .slider__page {
-  background-color: transparent;
+  background-color: var(--color-gray-100);
   outline: 2px solid var(--color-blue-700);
   width: 14px;
   height: 14px;
@@ -28,9 +28,17 @@
 }
 
 .slider__arrow--prev {
-  left: -5%;
+  /* left: -5%; */
 }
 
 .slider__arrow--next {
-  right: -5%;
+  /* right: -5%; */
+}
+
+.portfolio__slide {
+  opacity: 0.6;
+}
+
+.portfolio__slide.is-active {
+  opacity: 1;
 }
