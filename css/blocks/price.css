@@ -71,7 +71,7 @@
 
 .price__service-name::after {
   position: absolute;
-  content: url("/img/check.svg");
+  content: url("../../img/check.svg");
   width: 9px;
   height: 6px;
   top: 0;
@@ -95,7 +95,7 @@
 
 .price__headline::after {
   position: absolute;
-  content: url("/img/price-arrow.svg");
+  content: url("../../img/price-arrow.svg");
   width: 11px;
   height: 11px;
   top: 0;

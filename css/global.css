@@ -145,7 +145,7 @@ img {
   position: absolute;
   top: -3px;
   content: "";
-  background-image: url("/img/down-arrow.svg");
+  background-image: url("../../img/down-arrow.svg");
   height: 24px;
   width: 24px;
 }
@@ -159,7 +159,7 @@ img {
   top: -3px;
   left: -30px;
   content: "";
-  background-image: url("/img/left-arrow.svg");
+  background-image: url("../../img/left-arrow.svg");
   height: 24px;
   width: 24px;
 }

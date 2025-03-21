@@ -34,7 +34,7 @@
 
 .reviews__address::after {
   position: absolute;
-  content: url("/img/map--pin.svg");
+  content: url("../../img/map--pin.svg");
   top: 0;
   left: 0;
 }

@@ -41,7 +41,7 @@
   content: "";
   left: 0;
   top: 2px;
-  background-image: url("/img/head-phone.svg");
+  background-image: url("../../img/head-phone.svg");
   width: 17px;
   height: 18px;
 }

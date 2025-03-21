@@ -1,6 +1,6 @@
 .suppliers {
   position: relative;
-  background-image: url("/img/suppliers-back.png");
+  background-image: url("../../img/suppliers-back.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

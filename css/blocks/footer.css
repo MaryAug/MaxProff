@@ -126,7 +126,7 @@
 
 .footer__phone::before {
   position: absolute;
-  content: url("/img/phone.svg");
+  content: url("../../img/phone.svg");
   width: 22px;
   height: 22px;
   top: -3px;
@@ -157,7 +157,7 @@
 
 .footer__mail::before {
   position: absolute;
-  content: url("/img/mail.svg");
+  content: url("../../img/mail.svg");
   width: 22px;
   height: 22px;
   top: -3px;
@@ -171,7 +171,7 @@
 
 .footer__address::before {
   position: absolute;
-  content: url("/img/map.svg");
+  content: url("../../img/map.svg");
   width: 22px;
   height: 22px;
   top: -3px;
